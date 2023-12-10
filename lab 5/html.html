@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лр 5</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <form>
+            <label for="text-input">Текстовое поле:</label>
+            <input type="text" id="text-input" name="text-input" required>
+            
+            <label for="select-list">Характеристики отображения текста:</label>
+            <select id="select-list" name="select-list">
+                <option value="option1">Вариант 1</option>
+                <option value="option2">Вариант 2</option>
+                <option value="option3">Вариант 3</option>
+            </select>
+
+            <label for="text-area">Текстовая область:</label>
+            <textarea id="text-area" name="text-area" rows="4" required></textarea>
+
+            <button onclick="insertText('before', event)">Before</button>    
+            <button onclick="insertText('after', event)">After</button>
+            
+        </form>
+    </div>
+    
+    <div class="button-container">
+        <button onclick="openResultWindow(event)">Открыть окно</button>
+    </div>
+    
+    <script src="js.js"></script>
+</body>
+</html>
